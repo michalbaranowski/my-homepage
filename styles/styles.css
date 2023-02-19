@@ -28,8 +28,8 @@ html {
 
 .circle {
     position: fixed;
-    top: -50vw;
-    right: -50vw;
+    top: -60vw;
+    right: -60vw;
     z-index: -1;
     width: 100vw;
     height: 100vw;
@@ -145,12 +145,47 @@ html {
 }
 
 .section {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
 }
 
 .section-header {
     text-align: center;
     padding: 5vh;
+}
+
+.section h2 {
+    text-align: center;
+}
+
+.section h2.colored{
+    color: #758398;
+    font-style: italic;
+}
+
+.section-content {
+    margin-top: 100px;
+    display: flex;
+}
+
+.section-half {
+    width: 50%;
+    background-color: rgba(246, 248, 250, 0.8);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-url {
+    text-align: right;
+    margin-top: 15px;
+    font-family: mainFont;
+    text-decoration: none;
+    color: black;
 }
 
 .go-up {
