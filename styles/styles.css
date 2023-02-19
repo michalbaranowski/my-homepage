@@ -1,0 +1,173 @@
+@font-face {
+    font-family: mainFont;
+    src: url(../fonts/BebasNeue-Regular.woff2);
+}
+
+@font-face {
+    font-family: secondaryFont;
+    src: url(../fonts/BUTTERSHINE\ SERIF.otf);
+}
+
+body {
+    background-color: #F6F8FA;
+    max-height: 100vh;
+    max-width: 100vw;
+    margin: 0;
+    font-family: mainFont;
+}
+
+.scroll-link {
+    color: black;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+
+.circle {
+    position: fixed;
+    top: -50vw;
+    right: -50vw;
+    z-index: -1;
+    width: 100vw;
+    height: 100vw;
+    border-radius: 50%;
+    background: radial-gradient(circle at left, #D1DCE8, white);
+}
+
+.navbar {
+    margin-left: 15vw;
+    height: 5vh;
+    font-family: secondaryFont;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-left {
+    width: 55vw;
+}
+
+.navbar-right {
+    width: 25vw;
+}
+
+.navbar ul {
+    font-family: mainFont;
+    list-style-type: none;
+    margin-top: 15px;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 10px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar li:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -1px;
+  left: 0;
+  background-color: #758398;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar li:hover::before {
+    visibility: visible;
+    width: 100%;
+}
+
+.main-content {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    width: 30vw;
+}
+
+.name .welcome-text{
+    font-size: 1.5rem;
+    color: #758398;    
+
+    border-bottom: 2px solid #758398;
+    margin-bottom: 20px;
+}
+
+.name .fullname{
+    font-family: secondaryFont;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+}
+
+.name .role{
+    font-size: 2.5rem;
+    color: #758398;
+    margin-top: 0;
+}
+
+.avatar {
+    height: 670px;
+    width: 670px;
+    filter: grayscale(30%) contrast(110%) brightness(90%);
+    background-image: url("../images/avatar.JPG");
+    background-size: contain;
+    border-radius: 50%;
+    border: 2px solid #758398;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+}
+
+.contact-detail i {
+    font-size: 24px;
+    width: 30px;
+}
+
+.contact-detail a {
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+}
+
+.section {
+    height: 100vh;
+}
+
+.section-header {
+    text-align: center;
+    padding: 5vh;
+}
+
+.go-up {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    text-decoration: none;
+    color: #758398;
+    height: 50px;
+    width: 50px;
+    background-color: #D1DCE8;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.go-up i {
+    display: inline-block;
+    vertical-align: middle;
+}
