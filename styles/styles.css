@@ -16,6 +16,13 @@ body {
     font-family: mainFont;
 }
 
+.main-content {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .scroll-link {
     color: black;
     text-decoration: none;
@@ -89,13 +96,6 @@ html {
     width: 100%;
 }
 
-.main-content {
-    height: 95vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .name {
     width: 30vw;
 }
@@ -134,6 +134,7 @@ html {
 .contact-detail {
     display: flex;
     align-items: center;
+    font-size: 1.5vw;
 }
 
 .contact-detail i {
@@ -216,4 +217,64 @@ html {
 .go-up i {
     display: inline-block;
     vertical-align: middle;
+}
+
+@media only screen and (max-width: 768px) {
+    .avatar {
+        height: 30vh;
+        width: 30vh;
+    }
+
+    .navbar {
+        width: 15vh;
+        font-size: 2vh;
+    }
+
+    .main-content {
+        flex-direction: column-reverse;
+        justify-content: left;
+        margin-top: 15vh;
+    }
+
+    .name {
+        margin-top: 10vh;
+        width: 80vw;
+    }
+
+    .name .welcome-text{
+        font-size: 1.5vh;
+        width: 25vw;
+    }
+    
+    .name .fullname{
+        font-size: 3vh;
+    }
+    
+    .name .role{
+        font-size: 2vh;
+    }
+
+    .contact-detail {
+        font-size: 2vh;
+    }
+    
+    .contact-detail i {
+        font-size: 2vh;
+    }
+
+    .section {
+        display: block;
+        height: auto;
+    }
+
+    .section-url i {
+        width: 5vw;
+    }
+
+    .circle {
+        top: -60vh;
+        right: -60vh;
+        width: 100vh;
+        height: 100vh;
+    }
 }
