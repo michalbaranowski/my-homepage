@@ -13,6 +13,11 @@
                 <p>MB</p>
             </div>
             <div class="navbar-right">
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
                 <ul>
                     <li><a href="#navbar" class="scroll-link">Home</a></li>
                     <li><a href="#about" class="scroll-link">About</a></li>
@@ -64,4 +69,14 @@
 
         <a class="go-up" href="#navbar"><i class="fa-solid fa-chevron-up"></i></a>
     </body>
+
+    <script>
+        var hamburgerMenu = document.getElementsByClassName("hamburger-menu")[0];
+        var navbarright = document.getElementsByClassName("navbar-right")[0];
+        
+        hamburgerMenu.addEventListener("click", function() {
+            hamburgerMenu.classList.toggle("active");
+            navbarright.classList.toggle("active");
+        });
+    </script>
 </html>
