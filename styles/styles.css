@@ -237,8 +237,8 @@ html {
 
 @media only screen and (max-width: 768px) {
     .avatar {
-        height: 30vh;
-        width: 30vh;
+        height: 50vw;
+        width: 50vw;
     }
 
     .navbar {
