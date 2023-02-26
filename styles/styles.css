@@ -131,19 +131,21 @@ html {
     color: #758398;    
 
     border-bottom: 0.2vw solid #758398;
-    margin-bottom: 1.8vh;
+    margin-bottom: 6vh;
 }
 
 .name .fullname{
     font-family: secondaryFont;
     font-size: 3vw;
+    line-height: 2vw;
     margin-bottom: 0;
 }
 
 .name .role{
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: #758398;
     margin-top: 0;
+    margin-bottom: 6vh;
 }
 
 .avatar {
@@ -160,11 +162,11 @@ html {
 .contact-detail {
     display: flex;
     align-items: center;
-    font-size: 1.5vw;
+    font-size: 0.9vw;
 }
 
 .contact-detail i {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     width: 30px;
 }
 
